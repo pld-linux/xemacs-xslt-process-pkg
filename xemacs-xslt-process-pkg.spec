@@ -1,7 +1,7 @@
 Summary:	Interactive spelling corrector with GNU xslt-process
 Summary(pl):	Interakcyiny korektor pisowni u¿ywaj±cy GNU xslt-process-a
 Name:		xemacs-xslt-process-pkg
-%define 	srcname	xslt-process
+%define		srcname	xslt-process
 Version:	1.05
 Release:	1
 License:	GPL
@@ -17,13 +17,15 @@ Requires:	xslt-process
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Interactive spelling corrector with GNU xslt-process.
 
-%description -l pl 
+%description -l pl
+Interakcyiny korektor pisowni u¿ywaj±cy GNU xslt-process-a.
 
 %prep
 %setup -q -c
 
-#%build                                                      
+#%build
 #xemacs -batch -q -no-site-file -f batch-byte-compile lisp/xslt-process/xslt-process.el
 
 %install
@@ -32,13 +34,13 @@ install -d $RPM_BUILD_ROOT{%{_datadir}/xemacs-packages,%{_infodir}}
 
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 
-gzip -9nf lisp/xslt-process/ChangeLog 
+gzip -9nf lisp/xslt-process/ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/xslt-process/ChangeLog.gz 
+%doc lisp/xslt-process/ChangeLog.gz
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
