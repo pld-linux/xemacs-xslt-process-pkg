@@ -2,7 +2,7 @@ Summary:	Interactive spelling corrector with GNU xslt-process
 Summary(pl):	Interakcyiny korektor pisowni u¿ywaj±cy GNU xslt-process-a
 Name:		xemacs-xslt-process-pkg
 %define 	srcname	xslt-process
-Version:	1.04
+Version:	1.05
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
