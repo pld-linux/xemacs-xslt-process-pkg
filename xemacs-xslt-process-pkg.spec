@@ -1,5 +1,5 @@
 Summary:	Interactive spelling corrector with GNU xslt-process
-Summary(pl):	Interaktywny korektor pisowni u¿ywaj±cy GNU xslt-process-a
+Summary(pl.UTF-8):   Interaktywny korektor pisowni uÅ¼ywajÄ…cy GNU xslt-process-a
 Name:		xemacs-xslt-process-pkg
 %define		srcname	xslt-process
 Version:	1.11
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interactive spelling corrector with GNU xslt-process.
 
-%description -l pl
-Interaktywny korektor pisowni u¿ywaj±cy GNU xslt-process-a.
+%description -l pl.UTF-8
+Interaktywny korektor pisowni uÅ¼ywajÄ…cy GNU xslt-process-a.
 
 %prep
 %setup -q -c
